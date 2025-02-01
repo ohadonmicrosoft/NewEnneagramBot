@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EnneaBot – תוצאות שאלון האניאגרם</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Favicon (אם יש) -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- רקע עם שכבת תמונה שקופה -->
+  <div class="background-overlay"></div>
+  <div class="container">
+    <!-- Header עם לוגו ותפריט ניווט -->
+    <header class="header">
+      <div class="header-inner">
+        <h1 class="logo">EnneaBot</h1>
+        <nav class="nav">
+          <a href="#" class="nav-link active">תוצאות</a>
+          <a href="#about" class="nav-link">אודות</a>
+          <a href="#contact" class="nav-link">צור קשר</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- חלון "צ'אט" – ממשק תוצאות בצורה של שיחה -->
+    <main class="chat-container">
+      <div id="chat-window" class="chat-window">
+        <!-- הודעות "צ'אט" יתווספו כאן בצורה דינמית -->
+      </div>
+      <div class="actions">
+        <button id="moreInfoBtn" class="more-info-btn" onclick="toggleDetails()">מידע נוסף</button>
+        <button id="shareBtn" class="share-btn" onclick="shareResult()">שתף תוצאה</button>
+      </div>
+      <!-- אזור ניתוח נוסף (החלפה חלקה) -->
+      <section id="details" class="details-section hidden">
+        <h2>ניתוח מעמיק</h2>
+        <div id="infoContent">
+          <p>לכל טיפוס יש את היתרונות והאתגרים הייחודיים לו. אנו ממליצים לעיין במדריכים המפורטים שלנו וליישם כלים מעשיים לשיפור החיים.</p>
+          <ul>
+            <li><strong>טיפוס עיקרי:</strong> הגדר את הערכים והעקרונות המרכזיים שלך והתמקד בהם.</li>
+            <li><strong>טיפוס משני:</strong> למד לזהות את הקצוות ולמצוא את האיזון שבין השאיפה לשיפור וקבלת עצמך.</li>
+            <li>עקוב אחרי עדכונים, טיפים וכלים באתר להמשך התפתחות אישית.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2025 שאלון אניאגרם – כל הזכויות שמורות</p>
+      <nav class="footer-nav">
+        <a href="#about" class="footer-link">אודות</a>
+        <a href="#contact" class="footer-link">צור קשר</a>
+      </nav>
+    </footer>
+  </div>
+
+  <!-- Optional: חלק "אודות" -->
+  <section id="about" class="info-section">
+    <h2>אודות EnneaBot</h2>
+    <p>EnneaBot מציג את תוצאות שאלון האניאגרם בצורה אינטראקטיבית ומעוצבת. המערכת מאפשרת למשתמש לקבל תובנות על טיפוסו האישיותי, תוך הצגה מודרנית, קלה ונעימה לשימוש בכל מכשיר.</p>
+  </section>
+
+  <!-- Optional: חלק "צור קשר" -->
+  <section id="contact" class="info-section">
+    <h2>צור קשר</h2>
+    <p>לפרטים נוספים, הצעות או שאלות, ניתן ליצור קשר בדוא"ל: <a href="mailto:info@example.com">info@example.com</a></p>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

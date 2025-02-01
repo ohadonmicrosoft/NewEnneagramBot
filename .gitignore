@@ -1,0 +1,21 @@
+# Node modules (if any)
+node_modules/
+
+# macOS system files
+.DS_Store
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# Editor folders
+.vscode/
+.idea/
+
+# Others
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
